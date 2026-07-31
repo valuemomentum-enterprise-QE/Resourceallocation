@@ -511,6 +511,14 @@ export default function App() {
     <div className="app-shell">
       <header className="topbar">
         <div className="brand">
+          {import.meta.env.BASE_URL.includes("/Resourceallocation/") ? (
+            <a
+              href="/Resourceallocation/"
+              style={{ color: "inherit", textDecoration: "none", fontSize: "0.85rem", fontWeight: 600 }}
+            >
+              ← PulseDeck
+            </a>
+          ) : null}
           <div className="brand-mark">CapacityLens</div>
           <div className="brand-tag">See demand. Measure capacity. Plan with confidence.</div>
         </div>

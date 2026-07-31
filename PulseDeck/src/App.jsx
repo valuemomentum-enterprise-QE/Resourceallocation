@@ -30,17 +30,44 @@ export default function App() {
   const [active, setActive] = useState(null);
   const app = useMemo(() => (active ? APPS[active] : null), [active]);
 
+  function openApp(item) {
+    // On GitHub Pages, navigate fully so the app is visible at its own URL.
+    // Locally, iframe keeps the suite on one port while child servers run separately.
+    if (isPages) {
+      window.location.assign(item.url);
+      return;
+    }
+    setActive(item.id);
+  }
+
   if (app) {
     return (
       <div className="deck">
         <div className="app-frame">
           <div className="app-bar">
             <div className="title">{app.name}</div>
-            <button type="button" onClick={() => setActive(null)}>
-              ← Back to PulseDeck
-            </button>
+            <div style={{ display: "flex", gap: "0.5rem" }}>
+              <a
+                href={app.url}
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  border: "1px solid var(--line)",
+                  background: "#fff",
+                  borderRadius: "999px",
+                  padding: "0.4rem 0.85rem",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                  color: "inherit",
+                }}
+              >
+                Open in new tab
+              </a>
+              <button type="button" onClick={() => setActive(null)}>
+                ← Back to PulseDeck
+              </button>
+            </div>
           </div>
-          {/* iframe mounts only after click — app is not loaded on the home screen */}
           <iframe title={app.name} src={app.url} />
         </div>
       </div>
@@ -61,7 +88,7 @@ export default function App() {
               key={item.id}
               type="button"
               className={`tile ${item.tileClass}`}
-              onClick={() => setActive(item.id)}
+              onClick={() => openApp(item)}
             >
               <div className="eyebrow">{item.eyebrow}</div>
               <h2>{item.name}</h2>
@@ -73,8 +100,10 @@ export default function App() {
         <p className="status">
           {isPages ? (
             <>
-              Hosted on GitHub Pages ·{" "}
-              <code>CapacityLens</code> and <code>ScorePulse</code> load only when opened
+              Live on GitHub Pages · Direct links:{" "}
+              <a href={`${base}capacitylens/`}>CapacityLens</a>
+              {" · "}
+              <a href={`${base}scorepulse/`}>ScorePulse</a>
             </>
           ) : (
             <>

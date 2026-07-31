@@ -299,6 +299,14 @@ export default function App() {
     <div className="shell">
       <header className="top">
         <div className="brand">
+          {import.meta.env.BASE_URL.includes("/Resourceallocation/") ? (
+            <a
+              href="/Resourceallocation/"
+              style={{ color: "inherit", textDecoration: "none", fontSize: "0.85rem", fontWeight: 600 }}
+            >
+              ← PulseDeck
+            </a>
+          ) : null}
           <h1>ScorePulse</h1>
           <p>EFL executive scorecard — every worksheet, visualized without dropping cells.</p>
         </div>

@@ -2,7 +2,19 @@
 
 Enterprise QE suite for **capacity planning** and **EFL scorecards**.
 
-## PulseDeck (launcher)
+## Live site (GitHub Pages)
+
+**Open this URL:** https://valuemomentum-enterprise-QE.github.io/Resourceallocation/
+
+| Page | Link |
+|------|------|
+| PulseDeck (home) | https://valuemomentum-enterprise-QE.github.io/Resourceallocation/ |
+| CapacityLens | https://valuemomentum-enterprise-QE.github.io/Resourceallocation/capacitylens/ |
+| ScorePulse | https://valuemomentum-enterprise-QE.github.io/Resourceallocation/scorepulse/ |
+
+> Note: this is a **github.io** site, not the github.com repository page.
+
+## PulseDeck (local launcher)
 
 Open apps on demand: http://localhost:5200
 
