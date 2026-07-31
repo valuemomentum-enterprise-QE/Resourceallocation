@@ -19,12 +19,28 @@ CapacityLens defines the **business requirements, data model, capacity math, KPI
 
 ---
 
+## Live demo app
+
+Interactive dashboards (Executive / Portfolio / Team / Individual):
+
+```bash
+cd CapacityLens/app
+npm run install:all
+npm run dev
+```
+
+- UI: http://localhost:5173  
+- API: http://localhost:4000/api/health  
+
+See [app/README.md](app/README.md).
+
 ## Folder Structure
 
 ```
 CapacityLens/
 ├── README.md                          ← You are here
 ├── SOLUTION-DESIGN.md                 ← Master solution design (sections 1–9)
+├── app/                               ← Runnable demo (Express API + React UI)
 ├── docs/
 │   ├── 01-Business-Requirements.md
 │   ├── 02-Data-Model-Design.md
