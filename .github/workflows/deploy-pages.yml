@@ -1,10 +1,15 @@
-name: Deploy CapacityLens to GitHub Pages
+name: Deploy PulseDeck suite to GitHub Pages
 
 on:
   push:
     branches: [main]
     paths:
       - "CapacityLens/app/**"
+      - "ScorePulse/**"
+      - "PulseDeck/**"
+      - "scripts/build-pages.mjs"
+      - "package.json"
+      - "package-lock.json"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -20,9 +25,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: CapacityLens/app
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,20 +35,25 @@ jobs:
           node-version: "22"
           cache: npm
           cache-dependency-path: |
+            package-lock.json
             CapacityLens/app/package-lock.json
             CapacityLens/app/client/package-lock.json
             CapacityLens/app/server/package-lock.json
+            ScorePulse/client/package-lock.json
+            PulseDeck/package-lock.json
 
-      - name: Install dependencies
-        run: npm run install:all
+      - name: Install suite dependencies
+        run: |
+          npm install
+          npm run install:suite
 
-      - name: Build static site for GitHub Pages
+      - name: Build static suite for GitHub Pages
         run: npm run build:pages
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: CapacityLens/app/client/dist
+          path: dist-pages
 
   deploy:
     needs: build

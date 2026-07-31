@@ -1,6 +1,8 @@
-_excel_probe/
 **/node_modules/
 **/.vite/
 **/dist/
+dist-pages/
 *.log
 .DS_Store
+.env.production
+CapacityLens/_excel_probe/

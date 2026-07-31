@@ -36,9 +36,12 @@ See [app/README.md](app/README.md).
 
 ### GitHub Pages
 
-Hosting requirements: [app/GITHUB-PAGES-REQUIREMENTS.md](app/GITHUB-PAGES-REQUIREMENTS.md)
+Suite hosting (PulseDeck + CapacityLens + ScorePulse):  
+[app/GITHUB-PAGES-REQUIREMENTS.md](app/GITHUB-PAGES-REQUIREMENTS.md)
 
-Published URL (after Actions deploy): https://valuemomentum-enterprise-QE.github.io/Resourceallocation/
+- Home: https://valuemomentum-enterprise-QE.github.io/Resourceallocation/
+- CapacityLens: https://valuemomentum-enterprise-QE.github.io/Resourceallocation/capacitylens/
+- ScorePulse: https://valuemomentum-enterprise-QE.github.io/Resourceallocation/scorepulse/
 
 ## Folder Structure
 

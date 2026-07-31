@@ -29,6 +29,16 @@ Open http://localhost:5175
 
 Or use **PulseDeck** launcher at http://localhost:5200
 
+## GitHub Pages
+
+- Launcher: https://valuemomentum-enterprise-QE.github.io/Resourceallocation/
+- ScorePulse: https://valuemomentum-enterprise-QE.github.io/Resourceallocation/scorepulse/
+
+```bash
+# from repo root
+npm run build:pages
+```
+
 ## Data
 
 - Source Excel: `source-data/`

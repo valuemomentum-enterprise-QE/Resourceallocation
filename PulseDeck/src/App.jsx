@@ -1,12 +1,16 @@
 import { useMemo, useState } from "react";
 
+const isPages = import.meta.env.VITE_PAGES === "true";
+const base = import.meta.env.BASE_URL || "/";
+
 const APPS = {
   capacitylens: {
     id: "capacitylens",
     name: "CapacityLens",
     eyebrow: "Workforce analytics",
-    blurb: "Capacity versus demand, utilization, team loading, and staffing scenarios for QA organizations.",
-    url: "http://localhost:5173",
+    blurb:
+      "Capacity versus demand, utilization, team loading, and staffing scenarios for QA organizations.",
+    url: isPages ? `${base}capacitylens/` : "http://localhost:5173/",
     tileClass: "capacity",
     cta: "Open CapacityLens",
   },
@@ -14,8 +18,9 @@ const APPS = {
     id: "scorepulse",
     name: "ScorePulse",
     eyebrow: "EFL executive scorecard",
-    blurb: "Interactive RAG scorecard from May/June Excel workbooks — financial, delivery, quality, and every worksheet preserved.",
-    url: "http://localhost:5175",
+    blurb:
+      "Interactive RAG scorecard from May/June Excel workbooks — financial, delivery, quality, and every worksheet preserved.",
+    url: isPages ? `${base}scorepulse/` : "http://localhost:5175/",
     tileClass: "score",
     cta: "Open ScorePulse",
   },
@@ -47,7 +52,8 @@ export default function App() {
       <div className="deck-home">
         <h1>PulseDeck</h1>
         <p className="tagline">
-          Choose an application. Nothing loads until you click — CapacityLens and ScorePulse open on demand.
+          Choose an application. Nothing loads until you click — CapacityLens and ScorePulse open on
+          demand.
         </p>
         <div className="tiles">
           {Object.values(APPS).map((item) => (
@@ -65,7 +71,17 @@ export default function App() {
           ))}
         </div>
         <p className="status">
-          Requires local servers: CapacityLens <code>:5173</code> · ScorePulse <code>:5175</code> · PulseDeck <code>:5200</code>
+          {isPages ? (
+            <>
+              Hosted on GitHub Pages ·{" "}
+              <code>CapacityLens</code> and <code>ScorePulse</code> load only when opened
+            </>
+          ) : (
+            <>
+              Local servers: CapacityLens <code>:5173</code> · ScorePulse <code>:5175</code> ·
+              PulseDeck <code>:5200</code>
+            </>
+          )}
         </p>
       </div>
     </div>

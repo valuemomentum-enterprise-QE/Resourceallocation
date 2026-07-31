@@ -19,6 +19,22 @@ npm run dev:suite
 
 Then open **http://localhost:5200** and click an app tile.
 
+## GitHub Pages
+
+https://valuemomentum-enterprise-QE.github.io/Resourceallocation/
+
+| Path | App |
+|------|-----|
+| `/` | PulseDeck |
+| `/capacitylens/` | CapacityLens |
+| `/scorepulse/` | ScorePulse |
+
+```bash
+npm run build:pages
+```
+
+Details: [CapacityLens/app/GITHUB-PAGES-REQUIREMENTS.md](./CapacityLens/app/GITHUB-PAGES-REQUIREMENTS.md)
+
 ## Packages
 
 - [CapacityLens](./CapacityLens/) — capacity utilization & resource planning (design + demo app)

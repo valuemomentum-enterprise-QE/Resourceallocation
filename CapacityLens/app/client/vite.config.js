@@ -5,8 +5,8 @@ const isPages = process.env.GITHUB_PAGES === "true";
 
 export default defineConfig({
   plugins: [react()],
-  // Repo GitHub Pages URL: https://<org>.github.io/Resourceallocation/
-  base: isPages ? "/Resourceallocation/" : "/",
+  // Suite layout on Pages: https://<org>.github.io/Resourceallocation/capacitylens/
+  base: isPages ? "/Resourceallocation/capacitylens/" : "/",
   server: {
     port: 5173,
     proxy: {
