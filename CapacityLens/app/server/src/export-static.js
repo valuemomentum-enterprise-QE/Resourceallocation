@@ -29,7 +29,7 @@ function write(relPath, data) {
 }
 
 mkdirSync(outDir, { recursive: true });
-write("health.json", buildHealth());
+write("health.json", buildHealth("static"));
 write("meta.json", buildMeta());
 write("executive.json", buildExecutive());
 write("portfolio.json", buildPortfolio());

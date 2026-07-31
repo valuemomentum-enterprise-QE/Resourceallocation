@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/health", (_req, res) => {
-  res.json({ ...buildHealth(), port: PORT });
+  res.json({ ...buildHealth("live"), port: PORT });
 });
 
 app.get("/api/meta", (_req, res) => {

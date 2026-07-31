@@ -91,8 +91,8 @@ export function projectMetrics(project) {
   };
 }
 
-export function buildHealth() {
-  return { ok: true, service: "CapacityLens API", mode: "static" };
+export function buildHealth(mode = "live") {
+  return { ok: true, service: "CapacityLens API", mode };
 }
 
 export function buildMeta() {

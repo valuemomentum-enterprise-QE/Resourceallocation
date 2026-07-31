@@ -1,0 +1,6 @@
+_excel_probe/
+**/node_modules/
+**/.vite/
+**/dist/
+*.log
+.DS_Store

@@ -1,19 +1,18 @@
 {
-  "name": "capacitylens-client",
+  "name": "scorepulse",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite --host --port 5175",
     "build": "vite build",
-    "build:pages": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port 5175"
   },
   "dependencies": {
-    "capacitylens-app": "file:..",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "recharts": "^2.15.0"
+    "recharts": "^2.15.0",
+    "resourceallocation-suite": "file:../.."
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",

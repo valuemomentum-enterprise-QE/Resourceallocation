@@ -1,31 +1,30 @@
 # Resourceallocation
 
-Enterprise QE repository for **capacity utilization and resource planning** solution design.
+Enterprise QE suite for **capacity planning** and **EFL scorecards**.
 
-## Solution package
+## PulseDeck (launcher)
 
-### [CapacityLens](./CapacityLens/)
+Open apps on demand: http://localhost:5200
 
-**See demand. Measure capacity. Plan with confidence.**
+| App | Catchphrase | Port |
+|-----|-------------|------|
+| **CapacityLens** | See demand. Measure capacity. Plan with confidence. | 5173 |
+| **ScorePulse** | Catch the signal. Read the scorecard. | 5175 |
 
-Comprehensive solution design for QA Capacity Utilization & Resource Planning — business requirements, data model, capacity framework, KPIs, dashboards, forecasting, implementation roadmap, and wireframes.
-
-Start here: **[CapacityLens/README.md](./CapacityLens/README.md)** · **[CapacityLens/SOLUTION-DESIGN.md](./CapacityLens/SOLUTION-DESIGN.md)**
-
-### Live demo app
-
-- Local: `cd CapacityLens/app && npm run install:all && npm run dev`
-- GitHub Pages requirements: [CapacityLens/app/GITHUB-PAGES-REQUIREMENTS.md](./CapacityLens/app/GITHUB-PAGES-REQUIREMENTS.md)
-- Published URL: https://valuemomentum-enterprise-QE.github.io/Resourceallocation/
-
+```bash
+npm install
+npm run install:suite
+npm run dev:suite
 ```
-Resourceallocation/
-├── .github/workflows/deploy-pages.yml
-└── CapacityLens/
-    ├── README.md
-    ├── SOLUTION-DESIGN.md
-    ├── app/           (Express API + React UI + Pages build)
-    ├── docs/          (sections 1–9)
-    ├── diagrams/
-    └── templates/
-```
+
+Then open **http://localhost:5200** and click an app tile.
+
+## Packages
+
+- [CapacityLens](./CapacityLens/) — capacity utilization & resource planning (design + demo app)
+- [ScorePulse](./ScorePulse/) — interactive EFL May/June Excel scorecards
+- [PulseDeck](./PulseDeck/) — navigation hub (loads apps only when clicked)
+
+## ScorePulse data fidelity
+
+Both Excel workbooks share the same 16 worksheets. Extraction keeps every non-empty cell; scorecard metrics are parsed without inventing values. Excel errors (`#DIV/0!`, etc.) are retained.

@@ -1,0 +1,16 @@
+{
+  "name": "resourceallocation-suite",
+  "private": true,
+  "version": "1.0.0",
+  "description": "PulseDeck launcher + CapacityLens + ScorePulse",
+  "scripts": {
+    "install:suite": "npm install --prefix CapacityLens/app && npm run install:all --prefix CapacityLens/app && npm install --prefix ScorePulse/client && npm install --prefix PulseDeck",
+    "dev:suite": "npx concurrently -n deck,lens,pulse -c magenta,teal,gold \"npm run dev --prefix PulseDeck\" \"npm run dev --prefix CapacityLens/app\" \"npm run dev --prefix ScorePulse/client\"",
+    "dev:pulsedeck": "npm run dev --prefix PulseDeck",
+    "dev:capacitylens": "npm run dev --prefix CapacityLens/app",
+    "dev:scorepulse": "npm run dev --prefix ScorePulse/client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
