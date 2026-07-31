@@ -1,0 +1,11 @@
+KPI_ID,KPI_Name,Formula,Grain,Target_Green,Target_Amber,Target_Red,Primary_Audience
+KPI-01,Capacity Utilization %,AllocatedHours / NetAvailableHours * 100,Person/Team/Org,75-90,70-75 or 90-100,<70 or >100,All
+KPI-02,Allocation %,AllocatedHours_project / NetAvailableHours * 100,Person x Project,Sum ~= Utilization,Fragmentation risk,Over 100% on sum,Manager/Portfolio
+KPI-03,Available Capacity,max(0 NetAvailableHours - AllocatedHours),Person/Team,Meets intake,Tight <5% bench,Negative,Manager/Planner
+KPI-04,Over-Utilization %,Share or magnitude above UtilMax or 100%,Person/Team,<10% people,10-20%,>20%,Exec/Manager
+KPI-05,Under-Utilization %,Share or magnitude below UtilMin,Person/Team,<15% people,15-25%,>25%,Exec/Planner
+KPI-06,Resource Demand Forecast,Committed + Likely + Pipeline*Probability,Team/Skill/Org,MAPE improving,Bias watch,Large miss,Exec/Planner
+KPI-07,Team Load Balancing Index,1 - stdev(Util)/mean(Util),Team,>=0.75,0.60-0.75,<0.60,Manager
+KPI-08,Project Staffing Coverage,AllocatedHours / DemandHours * 100,Project x Period,>=95,80-95,<80,Portfolio
+KPI-09,Forecasted Capacity Gap,ForecastDemand - NetAvailableHours (also FTE),Team/Skill/Org,<=0 or planned,Small <5%,>=5% FTE,Exec/Planner
+KPI-10,Resource Bench %,AvailableHours / NetAvailableHours * 100,Team/Org,5-15,15-25 or 3-5,>25 or <3,Exec/Planner
