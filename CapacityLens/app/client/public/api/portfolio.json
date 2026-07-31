@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "projects": [
+    {
+      "id": "proj-a",
+      "name": "Payments Rebuild",
+      "portfolio": "Digital Banking",
+      "priority": "P1",
+      "committed": 280,
+      "likely": 40,
+      "pipeline": 60,
+      "demandHours": 320,
+      "allocated": 290,
+      "coverage": 90.6,
+      "unstaffed": 30
+    },
+    {
+      "id": "proj-b",
+      "name": "Core API v3",
+      "portfolio": "Platform",
+      "priority": "P1",
+      "committed": 320,
+      "likely": 50,
+      "pipeline": 80,
+      "demandHours": 370,
+      "allocated": 425,
+      "coverage": 114.9,
+      "unstaffed": 0
+    },
+    {
+      "id": "proj-c",
+      "name": "Mobile Wallet",
+      "portfolio": "Digital Banking",
+      "priority": "P2",
+      "committed": 210,
+      "likely": 30,
+      "pipeline": 40,
+      "demandHours": 240,
+      "allocated": 235,
+      "coverage": 97.9,
+      "unstaffed": 5
+    },
+    {
+      "id": "support",
+      "name": "Prod Support Retainer",
+      "portfolio": "BAU",
+      "priority": "P0",
+      "committed": 195,
+      "likely": 0,
+      "pipeline": 0,
+      "demandHours": 195,
+      "allocated": 195,
+      "coverage": 100,
+      "unstaffed": 0
+    },
+    {
+      "id": "enhance",
+      "name": "Regression Hardening",
+      "portfolio": "Quality",
+      "priority": "P2",
+      "committed": 260,
+      "likely": 45,
+      "pipeline": 70,
+      "demandHours": 305,
+      "allocated": 345,
+      "coverage": 113.1,
+      "unstaffed": 0
+    }
+  ],
+  "teams": [
+    {
+      "id": "payments",
+      "name": "Payments QA",
+      "lead": "Sam Rivera",
+      "memberCount": 4,
+      "net": 578,
+      "allocated": 505,
+      "available": 73,
+      "utilization": 87.4,
+      "tlbi": 0.87,
+      "overbooked": 1,
+      "bench": 12.6
+    },
+    {
+      "id": "platform",
+      "name": "Platform QA",
+      "lead": "Jordan Lee",
+      "memberCount": 3,
+      "net": 451,
+      "allocated": 390,
+      "available": 61,
+      "utilization": 86.5,
+      "tlbi": 0.96,
+      "overbooked": 0,
+      "bench": 13.5
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile QA",
+      "lead": "Priya Shah",
+      "memberCount": 2,
+      "net": 296,
+      "allocated": 255,
+      "available": 41,
+      "utilization": 86.1,
+      "tlbi": 0.97,
+      "overbooked": 0,
+      "bench": 13.9
+    },
+    {
+      "id": "automation",
+      "name": "Automation CoE",
+      "lead": "Chris Ng",
+      "memberCount": 3,
+      "net": 423,
+      "allocated": 340,
+      "available": 83,
+      "utilization": 80.4,
+      "tlbi": 0.95,
+      "overbooked": 0,
+      "bench": 19.6
+    }
+  ],
+  "allocationMatrix": [
+    {
+      "teamId": "payments",
+      "teamName": "Payments QA",
+      "proj-a": 210,
+      "proj-b": 150,
+      "proj-c": 0,
+      "support": 100,
+      "enhance": 45
+    },
+    {
+      "teamId": "platform",
+      "teamName": "Platform QA",
+      "proj-a": 40,
+      "proj-b": 215,
+      "proj-c": 0,
+      "support": 65,
+      "enhance": 70
+    },
+    {
+      "teamId": "mobile",
+      "teamName": "Mobile QA",
+      "proj-a": 0,
+      "proj-b": 0,
+      "proj-c": 195,
+      "support": 30,
+      "enhance": 30
+    },
+    {
+      "teamId": "automation",
+      "teamName": "Automation CoE",
+      "proj-a": 40,
+      "proj-b": 60,
+      "proj-c": 40,
+      "support": 0,
+      "enhance": 200
+    }
+  ],
+  "demandStack": [
+    {
+      "id": "proj-a",
+      "name": "Payments Rebuild",
+      "portfolio": "Digital Banking",
+      "priority": "P1",
+      "committed": 280,
+      "likely": 40,
+      "pipeline": 60,
+      "demandHours": 320,
+      "allocated": 290,
+      "coverage": 90.6,
+      "unstaffed": 30
+    },
+    {
+      "id": "proj-b",
+      "name": "Core API v3",
+      "portfolio": "Platform",
+      "priority": "P1",
+      "committed": 320,
+      "likely": 50,
+      "pipeline": 80,
+      "demandHours": 370,
+      "allocated": 425,
+      "coverage": 114.9,
+      "unstaffed": 0
+    },
+    {
+      "id": "proj-c",
+      "name": "Mobile Wallet",
+      "portfolio": "Digital Banking",
+      "priority": "P2",
+      "committed": 210,
+      "likely": 30,
+      "pipeline": 40,
+      "demandHours": 240,
+      "allocated": 235,
+      "coverage": 97.9,
+      "unstaffed": 5
+    },
+    {
+      "id": "support",
+      "name": "Prod Support Retainer",
+      "portfolio": "BAU",
+      "priority": "P0",
+      "committed": 195,
+      "likely": 0,
+      "pipeline": 0,
+      "demandHours": 195,
+      "allocated": 195,
+      "coverage": 100,
+      "unstaffed": 0
+    },
+    {
+      "id": "enhance",
+      "name": "Regression Hardening",
+      "portfolio": "Quality",
+      "priority": "P2",
+      "committed": 260,
+      "likely": 45,
+      "pipeline": 70,
+      "demandHours": 305,
+      "allocated": 345,
+      "coverage": 113.1,
+      "unstaffed": 0
+    }
+  ]
+}

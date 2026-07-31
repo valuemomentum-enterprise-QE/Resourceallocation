@@ -1,0 +1,11 @@
+{
+  "org": "Enterprise QE",
+  "scenario": "Baseline",
+  "periodLabel": "Jul 2026",
+  "refreshedAt": "2026-07-31T06:15:00Z",
+  "dqScore": 96,
+  "utilizationBand": {
+    "min": 75,
+    "max": 90
+  }
+}

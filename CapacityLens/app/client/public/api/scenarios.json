@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "scenarios": [
+    {
+      "id": "baseline",
+      "name": "Baseline",
+      "gapFte": 6.2,
+      "utilization": 88,
+      "bench": 11,
+      "note": "Current committed + likely demand"
+    },
+    {
+      "id": "hire-2-sdet",
+      "name": "Hire 2 SDETs (Sep)",
+      "gapFte": 2.1,
+      "utilization": 82,
+      "bench": 14,
+      "note": "Adds automation capacity with 3-month ramp"
+    },
+    {
+      "id": "demand-25",
+      "name": "Demand +25% Payments",
+      "gapFte": 9.8,
+      "utilization": 96,
+      "bench": 4,
+      "note": "Stress test for Payments Rebuild uplift"
+    },
+    {
+      "id": "attrition",
+      "name": "Lose 2 Senior QA (Oct)",
+      "gapFte": 11.4,
+      "utilization": 101,
+      "bench": 2,
+      "note": "Blast radius on coverage and TLBI"
+    }
+  ]
+}

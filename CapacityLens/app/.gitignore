@@ -6,3 +6,4 @@ build/
 .env
 .env.local
 .vite/
+client/dist/

@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "eden",
+    "name": "Eden Walsh",
+    "teamId": "platform",
+    "role": "SDET",
+    "skills": [
+      "Automation",
+      "API"
+    ],
+    "teamName": "Platform QA",
+    "capacity": {
+      "gross": 176,
+      "leave": 8,
+      "holiday": 0,
+      "overhead": 20,
+      "net": 148
+    },
+    "allocated": 130,
+    "available": 18,
+    "utilization": 87.8,
+    "status": "healthy",
+    "weekly": [
+      88,
+      90,
+      85,
+      87
+    ],
+    "allocations": [
+      {
+        "personId": "eden",
+        "projectId": "proj-b",
+        "hours": 90,
+        "projectName": "Core API v3",
+        "pct": 60.8
+      },
+      {
+        "personId": "eden",
+        "projectId": "enhance",
+        "hours": 40,
+        "projectName": "Regression Hardening",
+        "pct": 27
+      }
+    ]
+  }
+}

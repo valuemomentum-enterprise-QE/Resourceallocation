@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "fin",
+    "name": "Fin Morales",
+    "teamId": "platform",
+    "role": "QA Lead",
+    "skills": [
+      "API",
+      "Performance"
+    ],
+    "teamName": "Platform QA",
+    "capacity": {
+      "gross": 176,
+      "leave": 0,
+      "holiday": 0,
+      "overhead": 21,
+      "net": 155
+    },
+    "allocated": 140,
+    "available": 15,
+    "utilization": 90.3,
+    "status": "high",
+    "weekly": [
+      82,
+      84,
+      80,
+      83
+    ],
+    "allocations": [
+      {
+        "personId": "fin",
+        "projectId": "proj-b",
+        "hours": 70,
+        "projectName": "Core API v3",
+        "pct": 45.2
+      },
+      {
+        "personId": "fin",
+        "projectId": "support",
+        "hours": 40,
+        "projectName": "Prod Support Retainer",
+        "pct": 25.8
+      },
+      {
+        "personId": "fin",
+        "projectId": "enhance",
+        "hours": 30,
+        "projectName": "Regression Hardening",
+        "pct": 19.4
+      }
+    ]
+  }
+}

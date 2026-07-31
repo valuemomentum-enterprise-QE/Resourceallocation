@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "team": {
+    "id": "payments",
+    "name": "Payments QA",
+    "lead": "Sam Rivera",
+    "memberCount": 4,
+    "net": 578,
+    "allocated": 505,
+    "available": 73,
+    "utilization": 87.4,
+    "tlbi": 0.87,
+    "overbooked": 1,
+    "bench": 12.6,
+    "members": [
+      {
+        "id": "alex",
+        "name": "Alex Chen",
+        "teamId": "payments",
+        "role": "SDET",
+        "skills": [
+          "Automation",
+          "API"
+        ],
+        "teamName": "Payments QA",
+        "capacity": {
+          "gross": 176,
+          "leave": 8,
+          "holiday": 0,
+          "overhead": 20,
+          "net": 148
+        },
+        "allocated": 135,
+        "available": 13,
+        "utilization": 91.2,
+        "status": "high",
+        "weekly": [
+          95,
+          110,
+          88,
+          92
+        ],
+        "allocations": [
+          {
+            "personId": "alex",
+            "projectId": "proj-a",
+            "hours": 60,
+            "projectName": "Payments Rebuild",
+            "pct": 40.5
+          },
+          {
+            "personId": "alex",
+            "projectId": "proj-b",
+            "hours": 55,
+            "projectName": "Core API v3",
+            "pct": 37.2
+          },
+          {
+            "personId": "alex",
+            "projectId": "support",
+            "hours": 20,
+            "projectName": "Prod Support Retainer",
+            "pct": 13.5
+          }
+        ]
+      },
+      {
+        "id": "blair",
+        "name": "Blair Okonkwo",
+        "teamId": "payments",
+        "role": "QA Analyst",
+        "skills": [
+          "API",
+          "Functional"
+        ],
+        "teamName": "Payments QA",
+        "capacity": {
+          "gross": 176,
+          "leave": 16,
+          "holiday": 0,
+          "overhead": 19,
+          "net": 141
+        },
+        "allocated": 110,
+        "available": 31,
+        "utilization": 78,
+        "status": "healthy",
+        "weekly": [
+          70,
+          65,
+          72,
+          68
+        ],
+        "allocations": [
+          {
+            "personId": "blair",
+            "projectId": "proj-a",
+            "hours": 40,
+            "projectName": "Payments Rebuild",
+            "pct": 28.4
+          },
+          {
+            "personId": "blair",
+            "projectId": "support",
+            "hours": 50,
+            "projectName": "Prod Support Retainer",
+            "pct": 35.5
+          },
+          {
+            "personId": "blair",
+            "projectId": "enhance",
+            "hours": 20,
+            "projectName": "Regression Hardening",
+            "pct": 14.2
+          }
+        ]
+      },
+      {
+        "id": "casey",
+        "name": "Casey Brooks",
+        "teamId": "payments",
+        "role": "Senior QA",
+        "skills": [
+          "Functional",
+          "Performance"
+        ],
+        "teamName": "Payments QA",
+        "capacity": {
+          "gross": 176,
+          "leave": 0,
+          "holiday": 0,
+          "overhead": 21,
+          "net": 155
+        },
+        "allocated": 160,
+        "available": 0,
+        "utilization": 103.2,
+        "status": "over",
+        "weekly": [
+          105,
+          102,
+          115,
+          108
+        ],
+        "allocations": [
+          {
+            "personId": "casey",
+            "projectId": "proj-a",
+            "hours": 110,
+            "projectName": "Payments Rebuild",
+            "pct": 71
+          },
+          {
+            "personId": "casey",
+            "projectId": "proj-b",
+            "hours": 50,
+            "projectName": "Core API v3",
+            "pct": 32.3
+          }
+        ]
+      },
+      {
+        "id": "drew",
+        "name": "Drew Patel",
+        "teamId": "payments",
+        "role": "QA Analyst",
+        "skills": [
+          "Functional"
+        ],
+        "teamName": "Payments QA",
+        "capacity": {
+          "gross": 176,
+          "leave": 24,
+          "holiday": 0,
+          "overhead": 18,
+          "net": 134
+        },
+        "allocated": 100,
+        "available": 34,
+        "utilization": 74.6,
+        "status": "under",
+        "weekly": [
+          60,
+          55,
+          58,
+          62
+        ],
+        "allocations": [
+          {
+            "personId": "drew",
+            "projectId": "proj-b",
+            "hours": 45,
+            "projectName": "Core API v3",
+            "pct": 33.6
+          },
+          {
+            "personId": "drew",
+            "projectId": "support",
+            "hours": 30,
+            "projectName": "Prod Support Retainer",
+            "pct": 22.4
+          },
+          {
+            "personId": "drew",
+            "projectId": "enhance",
+            "hours": 25,
+            "projectName": "Regression Hardening",
+            "pct": 18.7
+          }
+        ]
+      }
+    ]
+  },
+  "exceptions": [
+    {
+      "id": 1,
+      "severity": "red",
+      "message": "Casey Brooks over-allocated at 115% in week 3",
+      "teamId": "payments",
+      "personId": "casey"
+    },
+    {
+      "id": 2,
+      "severity": "red",
+      "message": "Payments Rebuild coverage at 78% for next sprint",
+      "teamId": "payments",
+      "projectId": "proj-a"
+    },
+    {
+      "id": 4,
+      "severity": "amber",
+      "message": "Alex Chen PTO collides with Proj A milestone Friday",
+      "teamId": "payments",
+      "personId": "alex"
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "Automation",
+      "demand": 420,
+      "capacity": 372,
+      "gap": -48
+    },
+    {
+      "skill": "API Testing",
+      "demand": 280,
+      "capacity": 292,
+      "gap": 12
+    },
+    {
+      "skill": "Performance",
+      "demand": 160,
+      "capacity": 140,
+      "gap": -20
+    },
+    {
+      "skill": "Mobile",
+      "demand": 210,
+      "capacity": 296,
+      "gap": 86
+    },
+    {
+      "skill": "Functional",
+      "demand": 350,
+      "capacity": 330,
+      "gap": -20
+    }
+  ],
+  "weeks": [
+    "W1",
+    "W2",
+    "W3",
+    "W4"
+  ]
+}

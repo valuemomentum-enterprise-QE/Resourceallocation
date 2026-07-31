@@ -2,14 +2,18 @@
   "name": "capacitylens-app",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "description": "CapacityLens QA capacity utilization demo — API + dashboard",
   "scripts": {
     "dev": "concurrently -n api,web -c teal,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run dev --prefix client",
-    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "export-static": "npm run export-static --prefix server",
+    "build:pages": "npm run export-static && cross-env GITHUB_PAGES=true VITE_STATIC_API=true npm run build --prefix client && node scripts/prepare-pages.js"
   },
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3"
   }
 }

@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "jules",
+    "name": "Jules Martin",
+    "teamId": "automation",
+    "role": "Automation Architect",
+    "skills": [
+      "Automation",
+      "Performance"
+    ],
+    "teamName": "Automation CoE",
+    "capacity": {
+      "gross": 176,
+      "leave": 8,
+      "holiday": 0,
+      "overhead": 20,
+      "net": 148
+    },
+    "allocated": 120,
+    "available": 28,
+    "utilization": 81.1,
+    "status": "healthy",
+    "weekly": [
+      84,
+      86,
+      88,
+      85
+    ],
+    "allocations": [
+      {
+        "personId": "jules",
+        "projectId": "enhance",
+        "hours": 80,
+        "projectName": "Regression Hardening",
+        "pct": 54.1
+      },
+      {
+        "personId": "jules",
+        "projectId": "proj-a",
+        "hours": 40,
+        "projectName": "Payments Rebuild",
+        "pct": 27
+      }
+    ]
+  }
+}

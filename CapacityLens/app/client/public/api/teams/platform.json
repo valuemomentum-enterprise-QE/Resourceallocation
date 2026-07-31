@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "team": {
+    "id": "platform",
+    "name": "Platform QA",
+    "lead": "Jordan Lee",
+    "memberCount": 3,
+    "net": 451,
+    "allocated": 390,
+    "available": 61,
+    "utilization": 86.5,
+    "tlbi": 0.96,
+    "overbooked": 0,
+    "bench": 13.5,
+    "members": [
+      {
+        "id": "eden",
+        "name": "Eden Walsh",
+        "teamId": "platform",
+        "role": "SDET",
+        "skills": [
+          "Automation",
+          "API"
+        ],
+        "teamName": "Platform QA",
+        "capacity": {
+          "gross": 176,
+          "leave": 8,
+          "holiday": 0,
+          "overhead": 20,
+          "net": 148
+        },
+        "allocated": 130,
+        "available": 18,
+        "utilization": 87.8,
+        "status": "healthy",
+        "weekly": [
+          88,
+          90,
+          85,
+          87
+        ],
+        "allocations": [
+          {
+            "personId": "eden",
+            "projectId": "proj-b",
+            "hours": 90,
+            "projectName": "Core API v3",
+            "pct": 60.8
+          },
+          {
+            "personId": "eden",
+            "projectId": "enhance",
+            "hours": 40,
+            "projectName": "Regression Hardening",
+            "pct": 27
+          }
+        ]
+      },
+      {
+        "id": "fin",
+        "name": "Fin Morales",
+        "teamId": "platform",
+        "role": "QA Lead",
+        "skills": [
+          "API",
+          "Performance"
+        ],
+        "teamName": "Platform QA",
+        "capacity": {
+          "gross": 176,
+          "leave": 0,
+          "holiday": 0,
+          "overhead": 21,
+          "net": 155
+        },
+        "allocated": 140,
+        "available": 15,
+        "utilization": 90.3,
+        "status": "high",
+        "weekly": [
+          82,
+          84,
+          80,
+          83
+        ],
+        "allocations": [
+          {
+            "personId": "fin",
+            "projectId": "proj-b",
+            "hours": 70,
+            "projectName": "Core API v3",
+            "pct": 45.2
+          },
+          {
+            "personId": "fin",
+            "projectId": "support",
+            "hours": 40,
+            "projectName": "Prod Support Retainer",
+            "pct": 25.8
+          },
+          {
+            "personId": "fin",
+            "projectId": "enhance",
+            "hours": 30,
+            "projectName": "Regression Hardening",
+            "pct": 19.4
+          }
+        ]
+      },
+      {
+        "id": "gia",
+        "name": "Gia Nguyen",
+        "teamId": "platform",
+        "role": "QA Analyst",
+        "skills": [
+          "Functional",
+          "API"
+        ],
+        "teamName": "Platform QA",
+        "capacity": {
+          "gross": 176,
+          "leave": 8,
+          "holiday": 0,
+          "overhead": 20,
+          "net": 148
+        },
+        "allocated": 120,
+        "available": 28,
+        "utilization": 81.1,
+        "status": "healthy",
+        "weekly": [
+          78,
+          81,
+          79,
+          76
+        ],
+        "allocations": [
+          {
+            "personId": "gia",
+            "projectId": "proj-b",
+            "hours": 55,
+            "projectName": "Core API v3",
+            "pct": 37.2
+          },
+          {
+            "personId": "gia",
+            "projectId": "proj-a",
+            "hours": 40,
+            "projectName": "Payments Rebuild",
+            "pct": 27
+          },
+          {
+            "personId": "gia",
+            "projectId": "support",
+            "hours": 25,
+            "projectName": "Prod Support Retainer",
+            "pct": 16.9
+          }
+        ]
+      }
+    ]
+  },
+  "exceptions": [
+    {
+      "id": 3,
+      "severity": "amber",
+      "message": "4 PBIs unestimated on Core API v3",
+      "teamId": "platform",
+      "projectId": "proj-b"
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "Automation",
+      "demand": 420,
+      "capacity": 372,
+      "gap": -48
+    },
+    {
+      "skill": "API Testing",
+      "demand": 280,
+      "capacity": 292,
+      "gap": 12
+    },
+    {
+      "skill": "Performance",
+      "demand": 160,
+      "capacity": 140,
+      "gap": -20
+    },
+    {
+      "skill": "Mobile",
+      "demand": 210,
+      "capacity": 296,
+      "gap": 86
+    },
+    {
+      "skill": "Functional",
+      "demand": 350,
+      "capacity": 330,
+      "gap": -20
+    }
+  ],
+  "weeks": [
+    "W1",
+    "W2",
+    "W3",
+    "W4"
+  ]
+}

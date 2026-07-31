@@ -34,6 +34,12 @@ npm run dev
 
 See [app/README.md](app/README.md).
 
+### GitHub Pages
+
+Hosting requirements: [app/GITHUB-PAGES-REQUIREMENTS.md](app/GITHUB-PAGES-REQUIREMENTS.md)
+
+Published URL (after Actions deploy): https://valuemomentum-enterprise-QE.github.io/Resourceallocation/
+
 ## Folder Structure
 
 ```

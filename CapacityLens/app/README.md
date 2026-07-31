@@ -39,3 +39,19 @@ Open **http://localhost:5173**
 | Individual | Personal capacity, weekly load, project allocations |
 
 Sample data models a 12-person QA org across Payments, Platform, Mobile, and Automation CoE.
+
+## GitHub Pages
+
+Static hosting requirements and setup checklist:
+
+→ **[GITHUB-PAGES-REQUIREMENTS.md](./GITHUB-PAGES-REQUIREMENTS.md)**
+
+Build for Pages locally:
+
+```bash
+npm run build:pages
+```
+
+Live URL (after Pages is enabled and the workflow succeeds):
+
+https://valuemomentum-enterprise-QE.github.io/Resourceallocation/

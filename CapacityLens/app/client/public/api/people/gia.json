@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "gia",
+    "name": "Gia Nguyen",
+    "teamId": "platform",
+    "role": "QA Analyst",
+    "skills": [
+      "Functional",
+      "API"
+    ],
+    "teamName": "Platform QA",
+    "capacity": {
+      "gross": 176,
+      "leave": 8,
+      "holiday": 0,
+      "overhead": 20,
+      "net": 148
+    },
+    "allocated": 120,
+    "available": 28,
+    "utilization": 81.1,
+    "status": "healthy",
+    "weekly": [
+      78,
+      81,
+      79,
+      76
+    ],
+    "allocations": [
+      {
+        "personId": "gia",
+        "projectId": "proj-b",
+        "hours": 55,
+        "projectName": "Core API v3",
+        "pct": 37.2
+      },
+      {
+        "personId": "gia",
+        "projectId": "proj-a",
+        "hours": 40,
+        "projectName": "Payments Rebuild",
+        "pct": 27
+      },
+      {
+        "personId": "gia",
+        "projectId": "support",
+        "hours": 25,
+        "projectName": "Prod Support Retainer",
+        "pct": 16.9
+      }
+    ]
+  }
+}

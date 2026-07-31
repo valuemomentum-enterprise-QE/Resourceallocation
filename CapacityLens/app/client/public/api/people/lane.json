@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "lane",
+    "name": "Lane Foster",
+    "teamId": "automation",
+    "role": "SDET",
+    "skills": [
+      "Automation"
+    ],
+    "teamName": "Automation CoE",
+    "capacity": {
+      "gross": 176,
+      "leave": 40,
+      "holiday": 0,
+      "overhead": 16,
+      "net": 120
+    },
+    "allocated": 90,
+    "available": 30,
+    "utilization": 75,
+    "status": "healthy",
+    "weekly": [
+      55,
+      50,
+      48,
+      52
+    ],
+    "allocations": [
+      {
+        "personId": "lane",
+        "projectId": "enhance",
+        "hours": 50,
+        "projectName": "Regression Hardening",
+        "pct": 41.7
+      },
+      {
+        "personId": "lane",
+        "projectId": "proj-c",
+        "hours": 40,
+        "projectName": "Mobile Wallet",
+        "pct": 33.3
+      }
+    ]
+  }
+}

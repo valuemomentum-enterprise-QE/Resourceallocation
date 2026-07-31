@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "team": {
+    "id": "mobile",
+    "name": "Mobile QA",
+    "lead": "Priya Shah",
+    "memberCount": 2,
+    "net": 296,
+    "allocated": 255,
+    "available": 41,
+    "utilization": 86.1,
+    "tlbi": 0.97,
+    "overbooked": 0,
+    "bench": 13.9,
+    "members": [
+      {
+        "id": "harper",
+        "name": "Harper Singh",
+        "teamId": "mobile",
+        "role": "Mobile QA",
+        "skills": [
+          "Mobile",
+          "Functional"
+        ],
+        "teamName": "Mobile QA",
+        "capacity": {
+          "gross": 176,
+          "leave": 0,
+          "holiday": 0,
+          "overhead": 21,
+          "net": 155
+        },
+        "allocated": 130,
+        "available": 25,
+        "utilization": 83.9,
+        "status": "healthy",
+        "weekly": [
+          86,
+          88,
+          90,
+          85
+        ],
+        "allocations": [
+          {
+            "personId": "harper",
+            "projectId": "proj-c",
+            "hours": 100,
+            "projectName": "Mobile Wallet",
+            "pct": 64.5
+          },
+          {
+            "personId": "harper",
+            "projectId": "support",
+            "hours": 30,
+            "projectName": "Prod Support Retainer",
+            "pct": 19.4
+          }
+        ]
+      },
+      {
+        "id": "indy",
+        "name": "Indy Clark",
+        "teamId": "mobile",
+        "role": "SDET",
+        "skills": [
+          "Mobile",
+          "Automation"
+        ],
+        "teamName": "Mobile QA",
+        "capacity": {
+          "gross": 176,
+          "leave": 16,
+          "holiday": 0,
+          "overhead": 19,
+          "net": 141
+        },
+        "allocated": 125,
+        "available": 16,
+        "utilization": 88.7,
+        "status": "healthy",
+        "weekly": [
+          92,
+          94,
+          89,
+          91
+        ],
+        "allocations": [
+          {
+            "personId": "indy",
+            "projectId": "proj-c",
+            "hours": 95,
+            "projectName": "Mobile Wallet",
+            "pct": 67.4
+          },
+          {
+            "personId": "indy",
+            "projectId": "enhance",
+            "hours": 30,
+            "projectName": "Regression Hardening",
+            "pct": 21.3
+          }
+        ]
+      }
+    ]
+  },
+  "exceptions": [
+    {
+      "id": 6,
+      "severity": "green",
+      "message": "Mobile QA has surplus capacity available to borrow",
+      "teamId": "mobile"
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "Automation",
+      "demand": 420,
+      "capacity": 372,
+      "gap": -48
+    },
+    {
+      "skill": "API Testing",
+      "demand": 280,
+      "capacity": 292,
+      "gap": 12
+    },
+    {
+      "skill": "Performance",
+      "demand": 160,
+      "capacity": 140,
+      "gap": -20
+    },
+    {
+      "skill": "Mobile",
+      "demand": 210,
+      "capacity": 296,
+      "gap": 86
+    },
+    {
+      "skill": "Functional",
+      "demand": 350,
+      "capacity": 330,
+      "gap": -20
+    }
+  ],
+  "weeks": [
+    "W1",
+    "W2",
+    "W3",
+    "W4"
+  ]
+}

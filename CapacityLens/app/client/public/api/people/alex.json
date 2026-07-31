@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "alex",
+    "name": "Alex Chen",
+    "teamId": "payments",
+    "role": "SDET",
+    "skills": [
+      "Automation",
+      "API"
+    ],
+    "teamName": "Payments QA",
+    "capacity": {
+      "gross": 176,
+      "leave": 8,
+      "holiday": 0,
+      "overhead": 20,
+      "net": 148
+    },
+    "allocated": 135,
+    "available": 13,
+    "utilization": 91.2,
+    "status": "high",
+    "weekly": [
+      95,
+      110,
+      88,
+      92
+    ],
+    "allocations": [
+      {
+        "personId": "alex",
+        "projectId": "proj-a",
+        "hours": 60,
+        "projectName": "Payments Rebuild",
+        "pct": 40.5
+      },
+      {
+        "personId": "alex",
+        "projectId": "proj-b",
+        "hours": 55,
+        "projectName": "Core API v3",
+        "pct": 37.2
+      },
+      {
+        "personId": "alex",
+        "projectId": "support",
+        "hours": 20,
+        "projectName": "Prod Support Retainer",
+        "pct": 13.5
+      }
+    ]
+  }
+}

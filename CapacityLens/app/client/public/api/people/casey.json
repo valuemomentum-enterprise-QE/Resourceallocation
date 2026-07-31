@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "casey",
+    "name": "Casey Brooks",
+    "teamId": "payments",
+    "role": "Senior QA",
+    "skills": [
+      "Functional",
+      "Performance"
+    ],
+    "teamName": "Payments QA",
+    "capacity": {
+      "gross": 176,
+      "leave": 0,
+      "holiday": 0,
+      "overhead": 21,
+      "net": 155
+    },
+    "allocated": 160,
+    "available": 0,
+    "utilization": 103.2,
+    "status": "over",
+    "weekly": [
+      105,
+      102,
+      115,
+      108
+    ],
+    "allocations": [
+      {
+        "personId": "casey",
+        "projectId": "proj-a",
+        "hours": 110,
+        "projectName": "Payments Rebuild",
+        "pct": 71
+      },
+      {
+        "personId": "casey",
+        "projectId": "proj-b",
+        "hours": 50,
+        "projectName": "Core API v3",
+        "pct": 32.3
+      }
+    ]
+  }
+}

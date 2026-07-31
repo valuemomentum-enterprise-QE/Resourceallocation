@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "kpis": {
+    "utilization": 85.2,
+    "bench": 14.8,
+    "available": 258,
+    "gapFte": -2.1,
+    "coverage": 103.3,
+    "overUtilPct": 25,
+    "underUtilPct": 8.3,
+    "headcount": 12
+  },
+  "teams": [
+    {
+      "id": "payments",
+      "name": "Payments QA",
+      "lead": "Sam Rivera",
+      "memberCount": 4,
+      "net": 578,
+      "allocated": 505,
+      "available": 73,
+      "utilization": 87.4,
+      "tlbi": 0.87,
+      "overbooked": 1,
+      "bench": 12.6
+    },
+    {
+      "id": "platform",
+      "name": "Platform QA",
+      "lead": "Jordan Lee",
+      "memberCount": 3,
+      "net": 451,
+      "allocated": 390,
+      "available": 61,
+      "utilization": 86.5,
+      "tlbi": 0.96,
+      "overbooked": 0,
+      "bench": 13.5
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile QA",
+      "lead": "Priya Shah",
+      "memberCount": 2,
+      "net": 296,
+      "allocated": 255,
+      "available": 41,
+      "utilization": 86.1,
+      "tlbi": 0.97,
+      "overbooked": 0,
+      "bench": 13.9
+    },
+    {
+      "id": "automation",
+      "name": "Automation CoE",
+      "lead": "Chris Ng",
+      "memberCount": 3,
+      "net": 423,
+      "allocated": 340,
+      "available": 83,
+      "utilization": 80.4,
+      "tlbi": 0.95,
+      "overbooked": 0,
+      "bench": 19.6
+    }
+  ],
+  "trend": [
+    {
+      "month": "Aug 25",
+      "capacity": 1680,
+      "demand": 1520,
+      "forecast": null
+    },
+    {
+      "month": "Sep 25",
+      "capacity": 1700,
+      "demand": 1610,
+      "forecast": null
+    },
+    {
+      "month": "Oct 25",
+      "capacity": 1650,
+      "demand": 1720,
+      "forecast": null
+    },
+    {
+      "month": "Nov 25",
+      "capacity": 1720,
+      "demand": 1680,
+      "forecast": null
+    },
+    {
+      "month": "Dec 25",
+      "capacity": 1400,
+      "demand": 1380,
+      "forecast": null
+    },
+    {
+      "month": "Jan 26",
+      "capacity": 1750,
+      "demand": 1690,
+      "forecast": null
+    },
+    {
+      "month": "Feb 26",
+      "capacity": 1680,
+      "demand": 1740,
+      "forecast": null
+    },
+    {
+      "month": "Mar 26",
+      "capacity": 1720,
+      "demand": 1810,
+      "forecast": null
+    },
+    {
+      "month": "Apr 26",
+      "capacity": 1700,
+      "demand": 1760,
+      "forecast": null
+    },
+    {
+      "month": "May 26",
+      "capacity": 1740,
+      "demand": 1820,
+      "forecast": null
+    },
+    {
+      "month": "Jun 26",
+      "capacity": 1710,
+      "demand": 1790,
+      "forecast": null
+    },
+    {
+      "month": "Jul 26",
+      "capacity": 1748,
+      "demand": 1830,
+      "forecast": 1830
+    },
+    {
+      "month": "Aug 26",
+      "capacity": 1760,
+      "demand": null,
+      "forecast": 1880
+    },
+    {
+      "month": "Sep 26",
+      "capacity": 1820,
+      "demand": null,
+      "forecast": 1950
+    },
+    {
+      "month": "Oct 26",
+      "capacity": 1840,
+      "demand": null,
+      "forecast": 1920
+    },
+    {
+      "month": "Nov 26",
+      "capacity": 1860,
+      "demand": null,
+      "forecast": 1980
+    },
+    {
+      "month": "Dec 26",
+      "capacity": 1520,
+      "demand": null,
+      "forecast": 1600
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "Automation",
+      "demand": 420,
+      "capacity": 372,
+      "gap": -48
+    },
+    {
+      "skill": "API Testing",
+      "demand": 280,
+      "capacity": 292,
+      "gap": 12
+    },
+    {
+      "skill": "Performance",
+      "demand": 160,
+      "capacity": 140,
+      "gap": -20
+    },
+    {
+      "skill": "Mobile",
+      "demand": 210,
+      "capacity": 296,
+      "gap": 86
+    },
+    {
+      "skill": "Functional",
+      "demand": 350,
+      "capacity": 330,
+      "gap": -20
+    }
+  ],
+  "exceptions": [
+    {
+      "id": 1,
+      "severity": "red",
+      "message": "Casey Brooks over-allocated at 115% in week 3",
+      "teamId": "payments",
+      "personId": "casey"
+    },
+    {
+      "id": 2,
+      "severity": "red",
+      "message": "Payments Rebuild coverage at 78% for next sprint",
+      "teamId": "payments",
+      "projectId": "proj-a"
+    },
+    {
+      "id": 3,
+      "severity": "amber",
+      "message": "4 PBIs unestimated on Core API v3",
+      "teamId": "platform",
+      "projectId": "proj-b"
+    },
+    {
+      "id": 4,
+      "severity": "amber",
+      "message": "Alex Chen PTO collides with Proj A milestone Friday",
+      "teamId": "payments",
+      "personId": "alex"
+    },
+    {
+      "id": 5,
+      "severity": "amber",
+      "message": "Automation skill gap of 48h this month",
+      "teamId": "automation"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "baseline",
+      "name": "Baseline",
+      "gapFte": 6.2,
+      "utilization": 88,
+      "bench": 11,
+      "note": "Current committed + likely demand"
+    },
+    {
+      "id": "hire-2-sdet",
+      "name": "Hire 2 SDETs (Sep)",
+      "gapFte": 2.1,
+      "utilization": 82,
+      "bench": 14,
+      "note": "Adds automation capacity with 3-month ramp"
+    },
+    {
+      "id": "demand-25",
+      "name": "Demand +25% Payments",
+      "gapFte": 9.8,
+      "utilization": 96,
+      "bench": 4,
+      "note": "Stress test for Payments Rebuild uplift"
+    },
+    {
+      "id": "attrition",
+      "name": "Lose 2 Senior QA (Oct)",
+      "gapFte": 11.4,
+      "utilization": 101,
+      "bench": 2,
+      "note": "Blast radius on coverage and TLBI"
+    }
+  ]
+}

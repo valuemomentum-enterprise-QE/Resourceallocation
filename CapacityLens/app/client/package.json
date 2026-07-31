@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "build:pages": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "capacitylens-app": "file:..",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "recharts": "^2.15.0"

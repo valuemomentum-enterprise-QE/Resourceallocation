@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "kai",
+    "name": "Kai Romero",
+    "teamId": "automation",
+    "role": "SDET",
+    "skills": [
+      "Automation",
+      "API"
+    ],
+    "teamName": "Automation CoE",
+    "capacity": {
+      "gross": 176,
+      "leave": 0,
+      "holiday": 0,
+      "overhead": 21,
+      "net": 155
+    },
+    "allocated": 130,
+    "available": 25,
+    "utilization": 83.9,
+    "status": "healthy",
+    "weekly": [
+      90,
+      93,
+      91,
+      89
+    ],
+    "allocations": [
+      {
+        "personId": "kai",
+        "projectId": "enhance",
+        "hours": 70,
+        "projectName": "Regression Hardening",
+        "pct": 45.2
+      },
+      {
+        "personId": "kai",
+        "projectId": "proj-b",
+        "hours": 60,
+        "projectName": "Core API v3",
+        "pct": 38.7
+      }
+    ]
+  }
+}

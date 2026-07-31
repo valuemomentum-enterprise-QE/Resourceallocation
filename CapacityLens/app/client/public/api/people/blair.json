@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "blair",
+    "name": "Blair Okonkwo",
+    "teamId": "payments",
+    "role": "QA Analyst",
+    "skills": [
+      "API",
+      "Functional"
+    ],
+    "teamName": "Payments QA",
+    "capacity": {
+      "gross": 176,
+      "leave": 16,
+      "holiday": 0,
+      "overhead": 19,
+      "net": 141
+    },
+    "allocated": 110,
+    "available": 31,
+    "utilization": 78,
+    "status": "healthy",
+    "weekly": [
+      70,
+      65,
+      72,
+      68
+    ],
+    "allocations": [
+      {
+        "personId": "blair",
+        "projectId": "proj-a",
+        "hours": 40,
+        "projectName": "Payments Rebuild",
+        "pct": 28.4
+      },
+      {
+        "personId": "blair",
+        "projectId": "support",
+        "hours": 50,
+        "projectName": "Prod Support Retainer",
+        "pct": 35.5
+      },
+      {
+        "personId": "blair",
+        "projectId": "enhance",
+        "hours": 20,
+        "projectName": "Regression Hardening",
+        "pct": 14.2
+      }
+    ]
+  }
+}

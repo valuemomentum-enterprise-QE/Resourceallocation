@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "harper",
+    "name": "Harper Singh",
+    "teamId": "mobile",
+    "role": "Mobile QA",
+    "skills": [
+      "Mobile",
+      "Functional"
+    ],
+    "teamName": "Mobile QA",
+    "capacity": {
+      "gross": 176,
+      "leave": 0,
+      "holiday": 0,
+      "overhead": 21,
+      "net": 155
+    },
+    "allocated": 130,
+    "available": 25,
+    "utilization": 83.9,
+    "status": "healthy",
+    "weekly": [
+      86,
+      88,
+      90,
+      85
+    ],
+    "allocations": [
+      {
+        "personId": "harper",
+        "projectId": "proj-c",
+        "hours": 100,
+        "projectName": "Mobile Wallet",
+        "pct": 64.5
+      },
+      {
+        "personId": "harper",
+        "projectId": "support",
+        "hours": 30,
+        "projectName": "Prod Support Retainer",
+        "pct": 19.4
+      }
+    ]
+  }
+}

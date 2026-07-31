@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "drew",
+    "name": "Drew Patel",
+    "teamId": "payments",
+    "role": "QA Analyst",
+    "skills": [
+      "Functional"
+    ],
+    "teamName": "Payments QA",
+    "capacity": {
+      "gross": 176,
+      "leave": 24,
+      "holiday": 0,
+      "overhead": 18,
+      "net": 134
+    },
+    "allocated": 100,
+    "available": 34,
+    "utilization": 74.6,
+    "status": "under",
+    "weekly": [
+      60,
+      55,
+      58,
+      62
+    ],
+    "allocations": [
+      {
+        "personId": "drew",
+        "projectId": "proj-b",
+        "hours": 45,
+        "projectName": "Core API v3",
+        "pct": 33.6
+      },
+      {
+        "personId": "drew",
+        "projectId": "support",
+        "hours": 30,
+        "projectName": "Prod Support Retainer",
+        "pct": 22.4
+      },
+      {
+        "personId": "drew",
+        "projectId": "enhance",
+        "hours": 25,
+        "projectName": "Regression Hardening",
+        "pct": 18.7
+      }
+    ]
+  }
+}

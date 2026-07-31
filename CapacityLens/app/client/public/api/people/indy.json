@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "person": {
+    "id": "indy",
+    "name": "Indy Clark",
+    "teamId": "mobile",
+    "role": "SDET",
+    "skills": [
+      "Mobile",
+      "Automation"
+    ],
+    "teamName": "Mobile QA",
+    "capacity": {
+      "gross": 176,
+      "leave": 16,
+      "holiday": 0,
+      "overhead": 19,
+      "net": 141
+    },
+    "allocated": 125,
+    "available": 16,
+    "utilization": 88.7,
+    "status": "healthy",
+    "weekly": [
+      92,
+      94,
+      89,
+      91
+    ],
+    "allocations": [
+      {
+        "personId": "indy",
+        "projectId": "proj-c",
+        "hours": 95,
+        "projectName": "Mobile Wallet",
+        "pct": 67.4
+      },
+      {
+        "personId": "indy",
+        "projectId": "enhance",
+        "hours": 30,
+        "projectName": "Regression Hardening",
+        "pct": 21.3
+      }
+    ]
+  }
+}

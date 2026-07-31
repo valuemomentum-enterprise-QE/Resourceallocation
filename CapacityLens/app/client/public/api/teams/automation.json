@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "org": "Enterprise QE",
+    "scenario": "Baseline",
+    "periodLabel": "Jul 2026",
+    "refreshedAt": "2026-07-31T06:15:00Z",
+    "dqScore": 96,
+    "utilizationBand": {
+      "min": 75,
+      "max": 90
+    }
+  },
+  "team": {
+    "id": "automation",
+    "name": "Automation CoE",
+    "lead": "Chris Ng",
+    "memberCount": 3,
+    "net": 423,
+    "allocated": 340,
+    "available": 83,
+    "utilization": 80.4,
+    "tlbi": 0.95,
+    "overbooked": 0,
+    "bench": 19.6,
+    "members": [
+      {
+        "id": "jules",
+        "name": "Jules Martin",
+        "teamId": "automation",
+        "role": "Automation Architect",
+        "skills": [
+          "Automation",
+          "Performance"
+        ],
+        "teamName": "Automation CoE",
+        "capacity": {
+          "gross": 176,
+          "leave": 8,
+          "holiday": 0,
+          "overhead": 20,
+          "net": 148
+        },
+        "allocated": 120,
+        "available": 28,
+        "utilization": 81.1,
+        "status": "healthy",
+        "weekly": [
+          84,
+          86,
+          88,
+          85
+        ],
+        "allocations": [
+          {
+            "personId": "jules",
+            "projectId": "enhance",
+            "hours": 80,
+            "projectName": "Regression Hardening",
+            "pct": 54.1
+          },
+          {
+            "personId": "jules",
+            "projectId": "proj-a",
+            "hours": 40,
+            "projectName": "Payments Rebuild",
+            "pct": 27
+          }
+        ]
+      },
+      {
+        "id": "kai",
+        "name": "Kai Romero",
+        "teamId": "automation",
+        "role": "SDET",
+        "skills": [
+          "Automation",
+          "API"
+        ],
+        "teamName": "Automation CoE",
+        "capacity": {
+          "gross": 176,
+          "leave": 0,
+          "holiday": 0,
+          "overhead": 21,
+          "net": 155
+        },
+        "allocated": 130,
+        "available": 25,
+        "utilization": 83.9,
+        "status": "healthy",
+        "weekly": [
+          90,
+          93,
+          91,
+          89
+        ],
+        "allocations": [
+          {
+            "personId": "kai",
+            "projectId": "enhance",
+            "hours": 70,
+            "projectName": "Regression Hardening",
+            "pct": 45.2
+          },
+          {
+            "personId": "kai",
+            "projectId": "proj-b",
+            "hours": 60,
+            "projectName": "Core API v3",
+            "pct": 38.7
+          }
+        ]
+      },
+      {
+        "id": "lane",
+        "name": "Lane Foster",
+        "teamId": "automation",
+        "role": "SDET",
+        "skills": [
+          "Automation"
+        ],
+        "teamName": "Automation CoE",
+        "capacity": {
+          "gross": 176,
+          "leave": 40,
+          "holiday": 0,
+          "overhead": 16,
+          "net": 120
+        },
+        "allocated": 90,
+        "available": 30,
+        "utilization": 75,
+        "status": "healthy",
+        "weekly": [
+          55,
+          50,
+          48,
+          52
+        ],
+        "allocations": [
+          {
+            "personId": "lane",
+            "projectId": "enhance",
+            "hours": 50,
+            "projectName": "Regression Hardening",
+            "pct": 41.7
+          },
+          {
+            "personId": "lane",
+            "projectId": "proj-c",
+            "hours": 40,
+            "projectName": "Mobile Wallet",
+            "pct": 33.3
+          }
+        ]
+      }
+    ]
+  },
+  "exceptions": [
+    {
+      "id": 5,
+      "severity": "amber",
+      "message": "Automation skill gap of 48h this month",
+      "teamId": "automation"
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "Automation",
+      "demand": 420,
+      "capacity": 372,
+      "gap": -48
+    },
+    {
+      "skill": "API Testing",
+      "demand": 280,
+      "capacity": 292,
+      "gap": 12
+    },
+    {
+      "skill": "Performance",
+      "demand": 160,
+      "capacity": 140,
+      "gap": -20
+    },
+    {
+      "skill": "Mobile",
+      "demand": 210,
+      "capacity": 296,
+      "gap": 86
+    },
+    {
+      "skill": "Functional",
+      "demand": 350,
+      "capacity": 330,
+      "gap": -20
+    }
+  ],
+  "weeks": [
+    "W1",
+    "W2",
+    "W3",
+    "W4"
+  ]
+}

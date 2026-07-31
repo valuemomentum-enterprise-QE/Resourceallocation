@@ -12,12 +12,7 @@ import {
   BarChart,
   Bar,
 } from "recharts";
-
-async function api(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`API ${path} failed (${res.status})`);
-  return res.json();
-}
+import { api } from "./api.js";
 
 function utilTone(util) {
   if (util > 100) return "over";
