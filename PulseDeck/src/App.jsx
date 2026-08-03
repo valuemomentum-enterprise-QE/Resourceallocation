@@ -24,6 +24,16 @@ const APPS = {
     tileClass: "score",
     cta: "Open ScorePulse",
   },
+  flowboard: {
+    id: "flowboard",
+    name: "Flowboard",
+    eyebrow: "QE delivery & productivity",
+    blurb:
+      "Where capacity went and what delivery produced — capacity bridge, impediments, throughput trends, and method notes.",
+    url: isPages ? `${base}flowboard/` : "http://localhost:5176/",
+    tileClass: "flow",
+    cta: "Open Flowboard",
+  },
 };
 
 export default function App() {
@@ -31,8 +41,6 @@ export default function App() {
   const app = useMemo(() => (active ? APPS[active] : null), [active]);
 
   function openApp(item) {
-    // On GitHub Pages, navigate fully so the app is visible at its own URL.
-    // Locally, iframe keeps the suite on one port while child servers run separately.
     if (isPages) {
       window.location.assign(item.url);
       return;
@@ -79,8 +87,8 @@ export default function App() {
       <div className="deck-home">
         <h1>PulseDeck</h1>
         <p className="tagline">
-          Choose an application. Nothing loads until you click — CapacityLens and ScorePulse open on
-          demand.
+          Choose an application. Nothing loads until you click — CapacityLens, ScorePulse, and
+          Flowboard open on demand.
         </p>
         <div className="tiles">
           {Object.values(APPS).map((item) => (
@@ -100,15 +108,17 @@ export default function App() {
         <p className="status">
           {isPages ? (
             <>
-              Live on GitHub Pages · Direct links:{" "}
+              Live on GitHub Pages ·{" "}
               <a href={`${base}capacitylens/`}>CapacityLens</a>
               {" · "}
               <a href={`${base}scorepulse/`}>ScorePulse</a>
+              {" · "}
+              <a href={`${base}flowboard/`}>Flowboard</a>
             </>
           ) : (
             <>
-              Local servers: CapacityLens <code>:5173</code> · ScorePulse <code>:5175</code> ·
-              PulseDeck <code>:5200</code>
+              Local: CapacityLens <code>:5173</code> · ScorePulse <code>:5175</code> · Flowboard{" "}
+              <code>:5176</code> · PulseDeck <code>:5200</code>
             </>
           )}
         </p>

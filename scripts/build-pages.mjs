@@ -3,6 +3,7 @@
  *   /Resourceallocation/                 → PulseDeck
  *   /Resourceallocation/capacitylens/    → CapacityLens (static API)
  *   /Resourceallocation/scorepulse/      → ScorePulse
+ *   /Resourceallocation/flowboard/       → Flowboard (vanilla HTML report)
  */
 import { cpSync, copyFileSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -41,49 +42,42 @@ const pagesEnv = {
 
 function writeEnv(relDir) {
   const file = join(root, relDir, ".env.production");
-  writeFileSync(
-    file,
-    "VITE_PAGES=true\nVITE_STATIC_API=true\n",
-    "utf8"
-  );
+  writeFileSync(file, "VITE_PAGES=true\nVITE_STATIC_API=true\n", "utf8");
   console.log(`wrote ${relDir}/.env.production`);
 }
 
 writeEnv("CapacityLens/app/client");
 writeEnv("ScorePulse/client");
 writeEnv("PulseDeck");
+writeEnv("Flowboard");
 
-// 1) CapacityLens — export static API + build
 run("npm run export-static", "CapacityLens/app", pagesEnv);
 run("npm run build --prefix client", "CapacityLens/app", pagesEnv);
 run("node scripts/prepare-pages.js", "CapacityLens/app", pagesEnv);
 
-// 2) ScorePulse
 run("npm run build", "ScorePulse/client", pagesEnv);
-
-// 3) PulseDeck
+run("npm run build", "Flowboard", pagesEnv);
 run("npm run build", "PulseDeck", pagesEnv);
 
-// Assemble
 cpSync(join(root, "PulseDeck", "dist"), out, { recursive: true });
 mkdirSync(join(out, "capacitylens"), { recursive: true });
 mkdirSync(join(out, "scorepulse"), { recursive: true });
+mkdirSync(join(out, "flowboard"), { recursive: true });
 cpSync(join(root, "CapacityLens", "app", "client", "dist"), join(out, "capacitylens"), {
   recursive: true,
 });
 cpSync(join(root, "ScorePulse", "client", "dist"), join(out, "scorepulse"), { recursive: true });
+cpSync(join(root, "Flowboard", "dist"), join(out, "flowboard"), { recursive: true });
 
 ensureIndex(out);
 ensureIndex(join(out, "capacitylens"));
 ensureIndex(join(out, "scorepulse"));
+ensureIndex(join(out, "flowboard"));
 
-writeFileSync(
-  join(out, ".nojekyll"),
-  "",
-  "utf8"
-);
+writeFileSync(join(out, ".nojekyll"), "", "utf8");
 
 console.log(`\nGitHub Pages suite ready at ${out}`);
 console.log("  /                     PulseDeck");
 console.log("  /capacitylens/        CapacityLens");
 console.log("  /scorepulse/          ScorePulse");
+console.log("  /flowboard/           Flowboard");

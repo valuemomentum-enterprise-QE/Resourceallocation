@@ -5,9 +5,10 @@
 
 | Path | App |
 |------|-----|
-| `/Resourceallocation/` | **PulseDeck** (launcher — apps load only when clicked) |
-| `/Resourceallocation/capacitylens/` | **CapacityLens** (static API JSON) |
-| `/Resourceallocation/scorepulse/` | **ScorePulse** (Excel scorecard data) |
+| `/Resourceallocation/` | **PulseDeck** |
+| `/Resourceallocation/capacitylens/` | **CapacityLens** |
+| `/Resourceallocation/scorepulse/` | **ScorePulse** |
+| `/Resourceallocation/flowboard/` | **Flowboard** |
 
 ---
 

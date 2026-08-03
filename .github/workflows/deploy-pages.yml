@@ -7,6 +7,7 @@ on:
       - "CapacityLens/app/**"
       - "ScorePulse/**"
       - "PulseDeck/**"
+      - "Flowboard/**"
       - "scripts/build-pages.mjs"
       - "package.json"
       - "package-lock.json"
@@ -41,6 +42,7 @@ jobs:
             CapacityLens/app/server/package-lock.json
             ScorePulse/client/package-lock.json
             PulseDeck/package-lock.json
+            Flowboard/package-lock.json
 
       - name: Install suite dependencies
         run: |

@@ -1,0 +1,18 @@
+{
+  "name": "flowboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Flowboard — QE delivery and productivity report (vanilla HTML)",
+  "scripts": {
+    "dev": "vite --host --port 5176",
+    "build": "vite build",
+    "preview": "vite preview --port 5176"
+  },
+  "devDependencies": {
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "resourceallocation-suite": "file:.."
+  }
+}

@@ -111,6 +111,7 @@ body {
 
 .tile.capacity h2 { color: var(--teal-deep); }
 .tile.score h2 { color: #6b4f1d; }
+.tile.flow h2 { color: #024099; }
 
 .app-frame {
   flex: 1;
